@@ -6,5 +6,5 @@ const baseDir = `${__dirname}/build/`
 app.use(express.static(`${baseDir}`))
 app.get('/', (req, res) => res.sendFile('index.html' , { root : baseDir } ))
 
-const port = process.env.PORT || 3000;
+const port = 21210;
 app.listen(port)
